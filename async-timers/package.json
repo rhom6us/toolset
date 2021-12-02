@@ -1,0 +1,28 @@
+{
+  "name": "@rhom6us/async-timers",
+  "version": "1.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhom6us/toolset.git",
+    "directory": "async-timers"
+  },
+  "main": "lib/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "heft test --clean",
+    "build": "heft build --clean",
+    "build:watch": "heft build"
+  },
+  "keywords": [],
+  "author": "Thomas Butler",
+  "dependencies": {
+    "@rhom6us/func": "workspace:*",
+    "@rhom6us/set-immediate": "workspace:*"
+  },
+  "devDependencies": {
+    "@rhom6us/heft-web-rig": "workspace:*",
+    "@rushstack/eslint-config": "*",
+    "@rushstack/heft": "*"
+  }
+}

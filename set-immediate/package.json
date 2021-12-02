@@ -1,0 +1,29 @@
+{
+  "name": "@rhom6us/set-immediate",
+  "version": "1.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhom6us/toolset.git",
+    "directory": "set-immediate"
+  },
+  "main": "lib/index.js",
+  "sideEffects": [
+    "lib/index.js"
+  ],
+  "scripts": {
+    "test": "heft test --clean",
+    "build": "heft build --clean",
+    "build:watch": "heft build"
+  },
+  "keywords": [],
+  "author": "Thomas Butler",
+  "dependencies": {
+    "setimmediate": "^1.0.5"
+  },
+  "devDependencies": {
+    "@rhom6us/heft-web-rig": "workspace:*",
+    "@rushstack/eslint-config": "*",
+    "@rushstack/heft": "*"
+  }
+}
