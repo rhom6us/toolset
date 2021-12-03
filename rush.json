@@ -480,7 +480,8 @@
     // {
     //   "packageName": "@rhom6us/fniterate",
     //   "projectFolder": "fniterate",
-    //   "reviewCategory": "tools"
+    //   "reviewCategory": "tools",
+    //   "shouldPublish": false,
     // },
     {
       "packageName": "@rhom6us/func",

@@ -65,19 +65,6 @@ importers:
       '@rushstack/eslint-config': 2.4.5
       '@rushstack/heft': 0.42.3
 
-  ../../fniterate:
-    specifiers:
-      '@rhom6us/func': workspace:*
-      '@rhom6us/heft-web-rig': workspace:*
-      '@rushstack/eslint-config': ^2.4.5
-      '@rushstack/heft': ^0.42.2
-    dependencies:
-      '@rhom6us/func': link:../func
-    devDependencies:
-      '@rhom6us/heft-web-rig': link:../heft-web-rig
-      '@rushstack/eslint-config': 2.4.5
-      '@rushstack/heft': 0.42.3
-
   ../../func:
     specifiers:
       '@rhom6us/heft-web-rig': workspace:*

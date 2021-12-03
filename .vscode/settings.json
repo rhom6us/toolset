@@ -1,0 +1,17 @@
+{
+  // The package manager you use to install node modules.
+  "eslint.packageManager": "pnpm",
+  "npm.packageManager": "pnpm",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/*.log": true,
+    "**/.rush": true
+  },
+  "explorerExclude.backup": null,
+}

@@ -1,36 +1,34 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
 /**
  * ASCII: 32
  * regex: \s
  */
-type SpaceChar = ' ';
+// type SpaceChar = ' ';
 
 /**
  * regex: \S
  */
-type NonSpaceChar = Exclude<AnyChar, SpaceChar>;
+// type NonSpaceChar = Exclude<AnyChar, SpaceChar>;
 
 /**
  * ASCII: 33-47
  */
-type SymbolChar1 = '!' | '"' | '#' | '$' | '%' | '&' | "'" | '(' | ')' | '*' | '+' | ',' | '-' | '.' | '/';
+// type SymbolChar1 = '!' | '"' | '#' | '$' | '%' | '&' | "'" | '(' | ')' | '*' | '+' | ',' | '-' | '.' | '/';
 
 /**
  * ASCII: 48-57
  * regex: \d
  */
-type DigitChar = '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9';
+// type DigitChar = '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9';
 
 /**
  * regex: \D
  */
-type NonDigitChar = Exclude<AnyChar, DigitChar>;
+// type NonDigitChar = Exclude<AnyChar, DigitChar>;
 
 /**
  * ASCII: 58 - 64
  */
-type SymbolChar2 = ':' | ';' | '<' | '=' | '>' | '?' | '@';
+// type SymbolChar2 = ':' | ';' | '<' | '=' | '>' | '?' | '@';
 
 /**
  * ASCII: 65 - 90
@@ -41,7 +39,7 @@ type UpperCaseChar = Uppercase<LowerCaseChar>;
 /**
  * ASCII: 91 - 96
  */
-type SymbolChar3 = '[' | '\\' | ']' | '^' | '_' | '`';
+// type SymbolChar3 = '[' | '\\' | ']' | '^' | '_' | '`';
 
 /**
  * ASCII: 97 - 122
@@ -78,27 +76,27 @@ type LowerCaseChar =
 /**
  * ASCII: 123 - 126
  */
-type SymbolChar4 = '{' | '|' | '}' | '~';
+// type SymbolChar4 = '{' | '|' | '}' | '~';
 
-type SymbolChar = SymbolChar1 | SymbolChar2 | SymbolChar3 | SymbolChar4;
-type LetterChar = UpperCaseChar | LowerCaseChar;
+// type SymbolChar = SymbolChar1 | SymbolChar2 | SymbolChar3 | SymbolChar4;
+// type LetterChar = UpperCaseChar | LowerCaseChar;
 
 /**
  * almost the same as string but excludes things like \t, \n, etc that is highly unlikely one would want to be explicitely typed
  */
-type AnyChar = LetterChar | DigitChar | SymbolChar | SpaceChar;
+// type AnyChar = LetterChar | DigitChar | SymbolChar | SpaceChar;
 
 /**
  * regez: \w
  */
-type WordChar = LetterChar | DigitChar | '_';
+// type WordChar = LetterChar | DigitChar | '_';
 
 /**
  * regez: \W
  */
-type NonWordChar = Exclude<AnyChar, WordChar>;
+// type NonWordChar = Exclude<AnyChar, WordChar>;
 
-type Replace<T, P extends string, R extends string> = T extends `${infer X}${P}${infer Y}` ? `${X}${R}${Replace<Y, P, R>}` : T;
+// type Replace<T, P extends string, R extends string> = T extends `${infer X}${P}${infer Y}` ? `${X}${R}${Replace<Y, P, R>}` : T;
 
 // type Upper<T extends string> =
 //     T extends `${infer X}a${infer Y}` ? `${Upper<X>}A${Upper<Y>}` :
@@ -165,10 +163,10 @@ type Replace<T, P extends string, R extends string> = T extends `${infer X}${P}$
 // type Stringable = string | number | bigint | boolean | null | undefined;
 
 // eslint-disable-next-line prettier/prettier
-type J<T extends unknown[]> =
+type J<T extends unknown[], Separator extends string = ''> =
   T extends [] ? '' :
   T extends [any] ? `${T[0]}` :
-  T extends [any, ...infer Y] ? `${T[0]}${J<Y>}` :
+  T extends [any, ...infer Y] ? `${T[0]}${Separator}${J<Y, Separator>}` :
   never;
 
 // type D2<T> = J<[T, T]>;
@@ -200,21 +198,21 @@ type J<T extends unknown[]> =
 // type Front<T> = Train<T> extends [infer X, any] ? X : '';
 // type Caboose<T> = Train<T> extends [any, infer X] ? X : '';
 
-type ToCharArray<T> = T extends '' ? [] : T extends J<[infer X, infer Y]> ? [X, ...ToCharArray<Y>] : never;
-type FromCharArray<T extends unknown[]> = T extends []
-  ? ''
-  : T extends [string]
-  ? T[0]
-  : T extends [string, ...infer Y]
-  ? J<[T[0], FromCharArray<Y>]>
-  : never;
+// type ToCharArray<T> = T extends '' ? [] : T extends J<[infer X, infer Y]> ? [X, ...ToCharArray<Y>] : never;
+// type FromCharArray<T extends unknown[]> = T extends []
+//   ? ''
+//   : T extends [string]
+//   ? T[0]
+//   : T extends [string, ...infer Y]
+//   ? J<[T[0], FromCharArray<Y>]>
+//   : never;
 
-type Reverse<T> = T extends '' ? '' : T extends J<[infer X, infer Y]> ? J<[Reverse<Y>, X]> : never;
+// type Reverse<T> = T extends '' ? '' : T extends J<[infer X, infer Y]> ? J<[Reverse<Y>, X]> : never;
 
-type InsertBefore<TInput, TSearch, TInsert> = TInput extends J<[infer X, infer Y, infer Z]>
-  ? Y extends TSearch
-  ? J<[X, TInsert, Y, InsertBefore<Z, TSearch, TInsert>]>
-  : J<[X, InsertBefore<J<[Y, Z]>, TSearch, TInsert>]>
+type InsertBefore<TInput, TSearch, TInsert> = 
+TInput extends J<[infer X, infer Y, infer Z]> ? 
+  Y extends TSearch ? J<[X, TInsert, Y, InsertBefore<Z, TSearch, TInsert>]>
+    : J<[X, InsertBefore<J<[Y, Z]>, TSearch, TInsert>]>
   : TInput;
 
 // type SnakeCase<T extends string> =
@@ -229,7 +227,6 @@ type InsertBefore<TInput, TSearch, TInsert> = TInput extends J<[infer X, infer Y
 
 export type SnakeCase<T extends string> = Uppercase<InsertBefore<T, UpperCaseChar, '_'>>;
 export type DashCase<T extends string> = Lowercase<InsertBefore<T, UpperCaseChar, '-'>>;
-type pdpd = SnakeCase<'ProperID4Form'>;
-type spdpd = DashCase<'Pro5per1ID4Form'>;
+
 
 
