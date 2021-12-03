@@ -428,30 +428,35 @@
       "projectFolder": "async-timers",
       "reviewCategory": "tools",
       "versionPolicyName": "rhom6us",
+      "shouldPublish": true,
     },
     {
       "packageName": "@rhom6us/audio-context",
       "projectFolder": "audio-context",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/case-converter",
       "projectFolder": "case-converter",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/defer",
       "projectFolder": "defer",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/fetch",
       "projectFolder": "fetch",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     // {
     //   "packageName": "@rhom6us/fniterate",
@@ -464,55 +469,64 @@
       "packageName": "@rhom6us/func",
       "projectFolder": "func",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/kinda-weak-map",
       "projectFolder": "kinda-weak-map",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/logger",
       "projectFolder": "logger",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/obj",
       "projectFolder": "obj",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/set-immediate",
       "projectFolder": "set-immediate",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/singleton",
       "projectFolder": "singleton",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/type-guards",
       "projectFolder": "type-guards",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/type-helpers",
       "projectFolder": "type-helpers",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/typed-pluralizer",
       "projectFolder": "typed-pluralizer",
       "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "rhom6us",
+      "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/heft-web-rig",
