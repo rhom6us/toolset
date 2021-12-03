@@ -2,7 +2,6 @@
  * This is configuration file is used for advanced publishing configurations with Rush.
  * More documentation is available on the Rush website: https://rushjs.io
  */
-
 /**
  * A list of version policy definitions.  A "version policy" is a custom package versioning
  * strategy that affects "rush change", "rush version", and "rush publish".  The strategy applies
@@ -99,10 +98,13 @@
   // 
   //   // "includeEmailInChangeFile": true
   // }
-  
   {
     "policyName": "rhom6us",
-    "definitionName": "individualVersion",
-    "lockedMajor": 1
+    "definitionName": "lockStepVersion",
+    "version": "1.4.0",
+    // Valid values are: "prerelease", "release", "minor", "patch", "major"
+    "nextBump": "minor"
+    // "definitionName": "individualVersion",
+    // "lockedMajor": 1
   }
 ]
