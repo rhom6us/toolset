@@ -13,12 +13,10 @@
 	},
 	// ${localWorkspaceFolder}, ${containerWorkspaceFolder}, ${localWorkspaceFolderBasename}, ${containerWorkspaceFolderBasename}, ${containerEnv:VARIABLE_NAME}, ${localEnv:VARIABLE_NAME}
 	"containerEnv": {
-		"MY_CONTAINER_VAR": "some-value-here",
-		"MY_CONTAINER_VAR2": "${localEnv:SOME_LOCAL_VAR}"
+		"NPM_AUTH_TOKEN": "${localEnv:NPM_AUTH_TOKEN}",
 	},
 	"remoteEnv": {
-		"PATH": "${containerEnv:PATH}:/some/other/path",
-		"NPM_AUTH_TOKEN": "${localEnv:NPM_AUTH_TOKEN}"
+		// "PATH": "${containerEnv:PATH}:/some/other/path"
 	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
