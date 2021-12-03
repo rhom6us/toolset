@@ -1,5 +1,4 @@
 export * from './array';
-export * from './await';
 export * from './cast';
 export * from './CheapRingBuffer';
 export * from './counter';
@@ -8,7 +7,6 @@ export * from './deep-record';
 export * from './flattenMap';
 export * from './identity';
 export * from './node-callback-to-async';
-export * as obj from './obj';
 export * from './range';
 export * from './restify';
 export * from './tuple';

@@ -94,3 +94,5 @@ export const nativeFetch = globalThis.fetch;
 globalThis.fetch = function (...args: Parameters<typeof fetch>) {
   return nativeFetch.apply(this, args).then(wrapResponse);
 };
+export const fetch = globalThis.fetch;
+export default fetch;

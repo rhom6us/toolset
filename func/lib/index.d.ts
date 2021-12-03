@@ -6,4 +6,6 @@ export declare type Sub<Args extends any[] = any[]> = Action<Args>;
 export declare type AsyncSub<Args extends any[] = any[]> = AsyncAction<Args>;
 export declare type Ctor<Args extends any[] = any[], Instance = any> = new (...args: Args) => Instance;
 export declare type AbstractCtor<Args extends any[] = any[], Instance = any> = abstract new (...args: Args) => Instance;
+export declare type Identity<T> = Func<[T], T>;
+export declare function identity<T>(val: T): T;
 //# sourceMappingURL=index.d.ts.map

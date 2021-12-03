@@ -123,6 +123,19 @@ importers:
       '@rushstack/eslint-config': 2.4.5
       '@rushstack/heft': 0.42.3
 
+  ../../obj:
+    specifiers:
+      '@rhom6us/func': workspace:*
+      '@rhom6us/heft-web-rig': workspace:*
+      '@rushstack/eslint-config': '*'
+      '@rushstack/heft': '*'
+    dependencies:
+      '@rhom6us/func': link:../func
+    devDependencies:
+      '@rhom6us/heft-web-rig': link:../heft-web-rig
+      '@rushstack/eslint-config': 2.4.5
+      '@rushstack/heft': 0.42.3
+
   ../../set-immediate:
     specifiers:
       '@rhom6us/heft-web-rig': workspace:*
@@ -140,10 +153,12 @@ importers:
     specifiers:
       '@rhom6us/func': workspace:*
       '@rhom6us/heft-web-rig': workspace:*
+      '@rhom6us/kinda-weak-map': workspace:*
       '@rushstack/eslint-config': '*'
       '@rushstack/heft': '*'
     dependencies:
       '@rhom6us/func': link:../func
+      '@rhom6us/kinda-weak-map': link:../kinda-weak-map
     devDependencies:
       '@rhom6us/heft-web-rig': link:../heft-web-rig
       '@rushstack/eslint-config': 2.4.5
@@ -166,10 +181,22 @@ importers:
     specifiers:
       '@rhom6us/func': workspace:*
       '@rhom6us/heft-web-rig': workspace:*
+      '@rhom6us/obj': workspace:*
       '@rushstack/eslint-config': '*'
       '@rushstack/heft': '*'
     dependencies:
       '@rhom6us/func': link:../func
+      '@rhom6us/obj': link:../obj
+    devDependencies:
+      '@rhom6us/heft-web-rig': link:../heft-web-rig
+      '@rushstack/eslint-config': 2.4.5
+      '@rushstack/heft': 0.42.3
+
+  ../../typed-pluralizer:
+    specifiers:
+      '@rhom6us/heft-web-rig': workspace:*
+      '@rushstack/eslint-config': '*'
+      '@rushstack/heft': '*'
     devDependencies:
       '@rhom6us/heft-web-rig': link:../heft-web-rig
       '@rushstack/eslint-config': 2.4.5

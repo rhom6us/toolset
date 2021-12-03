@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":"AAAA,cAAc,OAAO,CAAC;AACtB,OAAO,KAAK,GAAG,MAAM,OAAO,CAAC;AAC7B,eAAe,GAAG,CAAC","sourcesContent":["export * from './obj';\nimport * as obj from './obj';\nexport default obj;"]}

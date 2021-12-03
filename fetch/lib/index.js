@@ -66,4 +66,6 @@ export const nativeFetch = globalThis.fetch;
 globalThis.fetch = function (...args) {
     return nativeFetch.apply(this, args).then(wrapResponse);
 };
+export const fetch = globalThis.fetch;
+export default fetch;
 //# sourceMappingURL=index.js.map

@@ -15,5 +15,7 @@ declare global {
         cancel(): Promise<void>;
     }
 }
-export declare const nativeFetch: typeof fetch;
+export declare const nativeFetch: typeof globalThis.fetch;
+export declare const fetch: typeof globalThis.fetch;
+export default fetch;
 //# sourceMappingURL=index.d.ts.map

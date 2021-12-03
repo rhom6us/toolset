@@ -499,6 +499,11 @@
       "reviewCategory": "tools"
     },
     {
+      "packageName": "@rhom6us/obj",
+      "projectFolder": "obj",
+      "reviewCategory": "tools"
+    },
+    {
       "packageName": "@rhom6us/set-immediate",
       "projectFolder": "set-immediate",
       "reviewCategory": "tools"
@@ -516,6 +521,11 @@
     {
       "packageName": "@rhom6us/type-helpers",
       "projectFolder": "type-helpers",
+      "reviewCategory": "tools"
+    },
+    {
+      "packageName": "@rhom6us/typed-pluralizer",
+      "projectFolder": "typed-pluralizer",
       "reviewCategory": "tools"
     },
     {

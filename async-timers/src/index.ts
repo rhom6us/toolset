@@ -1,5 +1,3 @@
-export * from './listenEventAsync';
-export * from './setImmediateAsync';
-export * from './setTimeoutAsync';
-
-
+export * from './exports';
+import * as asyncTimers from './exports';
+export default asyncTimers;

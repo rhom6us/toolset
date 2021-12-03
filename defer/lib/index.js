@@ -24,4 +24,5 @@ export function defer() {
     }
     defer.reject = reject;
 })(defer || (defer = {}));
+export default defer;
 //# sourceMappingURL=index.js.map

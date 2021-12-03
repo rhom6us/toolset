@@ -19,7 +19,8 @@
   "keywords": [],
   "author": "Thomas Butler",
   "dependencies": {
-    "@rhom6us/func": "workspace:*"
+    "@rhom6us/func": "workspace:*",
+    "@rhom6us/kinda-weak-map": "workspace:*"
   },
   "devDependencies": {
     "@rhom6us/heft-web-rig": "workspace:*",

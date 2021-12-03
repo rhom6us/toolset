@@ -14,3 +14,8 @@ export type AsyncSub<Args extends any[] = any[]> = AsyncAction<Args>;
 
 export type Ctor<Args extends any[] = any[], Instance = any> = new (...args: Args) => Instance;
 export type AbstractCtor<Args extends any[] = any[], Instance = any> = abstract new (...args: Args) => Instance;
+
+export type Identity<T> = Func<[T], T>;
+export function identity<T>(val:T):T{
+    return val;
+}

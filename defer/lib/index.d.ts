@@ -11,4 +11,5 @@ export declare namespace defer {
     function reject(reason?: any): defer<void>;
     function reject<T>(reason?: any): defer<T>;
 }
+export default defer;
 //# sourceMappingURL=index.d.ts.map

@@ -39,3 +39,5 @@ export namespace defer {
     return defer().reject(reason);
   }
 }
+
+export default defer;
