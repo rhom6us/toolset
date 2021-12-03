@@ -2,6 +2,18 @@
   "name": "@rhom6us/singleton",
   "entries": [
     {
+      "version": "1.5.1",
+      "tag": "@rhom6us/singleton_v1.5.1",
+      "date": "Fri, 03 Dec 2021 08:28:52 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "meaningless patch"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.5.0",
       "tag": "@rhom6us/singleton_v1.5.0",
       "date": "Fri, 03 Dec 2021 08:24:32 GMT",

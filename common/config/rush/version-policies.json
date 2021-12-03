@@ -101,9 +101,9 @@
   {
     "policyName": "rhom6us",
     "definitionName": "lockStepVersion",
-    "version": "1.5.0",
+    "version": "1.5.1",
     // Valid values are: "prerelease", "release", "minor", "patch", "major"
-    "nextBump": "minor"
+    "nextBump": "patch"
     // "definitionName": "individualVersion",
     // "lockedMajor": 1
   }

@@ -1,6 +1,13 @@
 # Change Log - @rhom6us/type-helpers
 
-This log was last generated on Fri, 03 Dec 2021 08:24:32 GMT and should not be manually modified.
+This log was last generated on Fri, 03 Dec 2021 08:28:52 GMT and should not be manually modified.
+
+## 1.5.1
+Fri, 03 Dec 2021 08:28:52 GMT
+
+### Updates
+
+- meaningless patch
 
 ## 1.5.0
 Fri, 03 Dec 2021 08:24:32 GMT
