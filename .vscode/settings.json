@@ -14,4 +14,7 @@
     "**/.rush": true
   },
   "explorerExclude.backup": null,
+  "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }

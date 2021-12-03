@@ -16,8 +16,6 @@
   },
   "keywords": [],
   "author": "Thomas Butler",
-  "dependencies": {
-  },
   "devDependencies": {
     "@rhom6us/heft-web-rig": "workspace:*",
     "@rushstack/eslint-config": "*",

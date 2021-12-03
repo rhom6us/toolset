@@ -7,11 +7,8 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "ms-vscode.vscode-typescript-next",
-    "tabnine.tabnine-vscode",
     "redhat.vscode-yaml",
     "redvanworkshop.explorer-exclude-vscode-extension",
     "rvest.vs-code-prettier-eslint",
-    "visualstudioexptteam.vscodeintellicode",
-    "wallabyjs.quokka-vscode",
   ]
 }
