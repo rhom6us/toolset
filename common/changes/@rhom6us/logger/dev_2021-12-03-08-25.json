@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@rhom6us/logger",
+      "comment": "meaningless patch",
+      "type": "none"
+    }
+  ],
+  "packageName": "@rhom6us/logger"
+}
