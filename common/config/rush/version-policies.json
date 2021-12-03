@@ -99,4 +99,10 @@
   // 
   //   // "includeEmailInChangeFile": true
   // }
+  
+  {
+    "policyName": "rhom6us",
+    "definitionName": "individualVersion",
+    "lockedMajor": 1
+  }
 ]
