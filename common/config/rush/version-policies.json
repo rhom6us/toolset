@@ -99,7 +99,7 @@
   //   // "includeEmailInChangeFile": true
   // }
   {
-    "policyName": "production",
+    "policyName": "rhom6us",
     // "definitionName": "lockStepVersion",
     "definitionName": "individualVersion",
     // "version": "1.5.1",

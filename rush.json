@@ -441,7 +441,7 @@
       "packageName": "@rhom6us/case-converter",
       "projectFolder": "case-converter",
       "reviewCategory": "prototype",
-      "versionPolicyName": "rhom6us",
+      "versionPolicyName": "prototype",
       // "shouldPublish": tru
     },
     {
@@ -462,7 +462,7 @@
       "packageName": "@rhom6us/fniterate",
       "projectFolder": "fniterate",
       "reviewCategory": "prototype",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "prototype"
       // "shouldPublish": false
     },
     {
@@ -525,7 +525,7 @@
       "packageName": "@rhom6us/typed-pluralizer",
       "projectFolder": "typed-pluralizer",
       "reviewCategory": "prototype",
-      "versionPolicyName": "rhom6us"
+      "versionPolicyName": "prototype"
       // "shouldPublish": true
     },
     {
