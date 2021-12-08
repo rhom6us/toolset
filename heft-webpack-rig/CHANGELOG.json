@@ -2,6 +2,18 @@
   "name": "@rhom6us/heft-webpack-rig",
   "entries": [
     {
+      "version": "0.3.1",
+      "tag": "@rhom6us/heft-webpack-rig_v0.3.1",
+      "date": "Wed, 08 Dec 2021 11:06:28 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "more package reference renames"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.0",
       "tag": "@rhom6us/heft-webpack-rig_v0.3.0",
       "date": "Wed, 08 Dec 2021 10:47:28 GMT",
