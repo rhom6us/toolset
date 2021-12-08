@@ -2,6 +2,18 @@
   "name": "@rhom6us/heft-webpack-rig",
   "entries": [
     {
+      "version": "0.3.0",
+      "tag": "@rhom6us/heft-webpack-rig_v0.3.0",
+      "date": "Wed, 08 Dec 2021 10:33:30 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "remove post-install script for now"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.2.0",
       "tag": "@rhom6us/heft-webpack-rig_v0.2.0",
       "date": "Wed, 08 Dec 2021 09:59:33 GMT",
