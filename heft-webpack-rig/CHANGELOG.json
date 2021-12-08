@@ -1,0 +1,17 @@
+{
+  "name": "@rhom6us/heft-webpack-rig",
+  "entries": [
+    {
+      "version": "0.2.0",
+      "tag": "@rhom6us/heft-webpack-rig_v0.2.0",
+      "date": "Wed, 08 Dec 2021 09:59:33 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "build"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -2,6 +2,26 @@
   "name": "@rhom6us/type-helpers",
   "entries": [
     {
+      "version": "1.5.2",
+      "tag": "@rhom6us/type-helpers_v1.5.2",
+      "date": "Wed, 08 Dec 2021 09:59:33 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "build"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@rhom6us/func\" to `1.5.2`"
+          },
+          {
+            "comment": "Updating dependency \"@rhom6us/obj\" to `1.5.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.5.1",
       "tag": "@rhom6us/type-helpers_v1.5.1",
       "date": "Fri, 03 Dec 2021 08:28:52 GMT",
