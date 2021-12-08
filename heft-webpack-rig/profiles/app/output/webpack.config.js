@@ -1,5 +1,5 @@
 /* eslint-disable */
-const config = require('@fndj/heft-webpack-rig/webpack/src/webpack.config.webapp');
+const config = require('@rhom6us/heft-webpack-rig/webpack/src/webpack.config.webapp');
 
 module.exports = config;
 
