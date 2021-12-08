@@ -1,0 +1,230 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@babel/plugin-proposal-class-properties",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@babel/plugin-syntax-top-level-await",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@babel/plugin-transform-react-jsx-self",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@babel/plugin-transform-react-jsx-source",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@microsoft/api-extractor",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@pmmmwh/react-refresh-webpack-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@purtuga/esm-webpack-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@rhom6us/func",
+      "allowedCategories": [ "production", "prototype" ]
+    },
+    {
+      "name": "@rhom6us/heft-web-rig",
+      "allowedCategories": [ "production", "prototype" ]
+    },
+    {
+      "name": "@rhom6us/kinda-weak-map",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@rhom6us/obj",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@rhom6us/set-immediate",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@rhom6us/type-helpers",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@rushstack/eslint-config",
+      "allowedCategories": [ "production", "prototype" ]
+    },
+    {
+      "name": "@rushstack/heft",
+      "allowedCategories": [ "production", "prototype" ]
+    },
+    {
+      "name": "@rushstack/heft-jest-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@rushstack/heft-sass-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@rushstack/heft-webpack4-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@rushstack/heft-webpack5-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@rushstack/rig-package",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@types/html-webpack-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@types/loader-utils",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@types/mini-css-extract-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@types/node",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@types/postcss-import",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@types/postcss-preset-env",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@types/webpack",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@types/webpack-dev-server",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "css-hot-loader",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "css-loader",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "eslint",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "gently-copy",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "html-loader",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "html-webpack-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "mini-css-extract-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "node-sass",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "pnpm",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "postcss",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "postcss-import",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "postcss-loader",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "postcss-preset-env",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "react-refresh",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "react-refresh-typescript",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "sass",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "sass-loader",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "setimmediate",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "source-map-loader",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "style-loader",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "ts-node",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "tslib",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "url",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "url-loader",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "webpack",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "webpack-dev-server",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "worker-url",
+      "allowedCategories": [ "production" ]
+    }
+  ]
+}
