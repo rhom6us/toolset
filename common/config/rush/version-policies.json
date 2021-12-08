@@ -100,10 +100,23 @@
   // }
   {
     "policyName": "rhom6us",
-    "definitionName": "lockStepVersion",
-    "version": "1.4.0",
+    // "definitionName": "lockStepVersion",
+    "definitionName": "individualVersion",
+    // "version": "1.5.1",
+    "lockedMajor": 1
     // Valid values are: "prerelease", "release", "minor", "patch", "major"
-    "nextBump": "minor"
+    // "nextBump": "patch"
+    // "definitionName": "individualVersion",
+    // "lockedMajor": 1
+  },
+  {
+    "policyName": "prototype",
+    // "definitionName": "lockStepVersion",
+    "definitionName": "individualVersion",
+    // "version": "1.5.1",
+    "lockedMajor": 0
+    // Valid values are: "prerelease", "release", "minor", "patch", "major"
+    // "nextBump": "patch"
     // "definitionName": "individualVersion",
     // "lockedMajor": 1
   }

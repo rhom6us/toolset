@@ -1,0 +1,7 @@
+{
+  "extends": "@fndj/heft-webpack-rig/profiles/library/tsconfig-base.json",
+  // "include": [ "src/index.ts" ],
+  "compilerOptions": {
+    // "types": [ ],
+  },
+}

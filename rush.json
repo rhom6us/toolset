@@ -184,34 +184,34 @@
    * The approvals are tracked in two config files "browser-approved-packages.json"
    * and "nonbrowser-approved-packages.json".  See the Rush documentation for details.
    */
-  // "approvedPackagesPolicy": {
-  //   /**
-  //    * The review categories allow you to say for example "This library is approved for usage
-  //    * in prototypes, but not in production code."
-  //    *
-  //    * Each project can be associated with one review category, by assigning the "reviewCategory" field
-  //    * in the "projects" section of rush.json.  The approval is then recorded in the files
-  //    * "common/config/rush/browser-approved-packages.json" and "nonbrowser-approved-packages.json"
-  //    * which are automatically generated during "rush update".
-  //    *
-  //    * Designate categories with whatever granularity is appropriate for your review process,
-  //    * or you could just have a single category called "default".
-  //    */
-  //   "reviewCategories": [
-  //     // Some example categories:
-  //     "production", // projects that ship to production
-  //     "tools",      // non-shipping projects that are part of the developer toolchain
-  //     "prototypes"  // experiments that should mostly be ignored by the review process
-  //   ],
-  // 
-  //   /**
-  //    * A list of NPM package scopes that will be excluded from review.
-  //    * We recommend to exclude TypeScript typings (the "@types" scope), because
-  //    * if the underlying package was already approved, this would imply that the typings
-  //    * are also approved.
-  //    */
-  //   // "ignoredNpmScopes": ["@types"]
-  // },
+  "approvedPackagesPolicy": {
+    /**
+     * The review categories allow you to say for example "This library is approved for usage
+     * in prototypes, but not in production code."
+     *
+     * Each project can be associated with one review category, by assigning the "reviewCategory" field
+     * in the "projects" section of rush.json.  The approval is then recorded in the files
+     * "common/config/rush/browser-approved-packages.json" and "nonbrowser-approved-packages.json"
+     * which are automatically generated during "rush update".
+     *
+     * Designate categories with whatever granularity is appropriate for your review process,
+     * or you could just have a single category called "default".
+     */
+    "reviewCategories": [
+      // Some example categories:
+      "production", // projects that ship to production
+      "tools",      // non-shipping projects that are part of the developer toolchain
+      "prototype"  // experiments that should mostly be ignored by the review process
+    ]
+  
+    /**
+     * A list of NPM package scopes that will be excluded from review.
+     * We recommend to exclude TypeScript typings (the "@types" scope), because
+     * if the underlying package was already approved, this would imply that the typings
+     * are also approved.
+     */
+    // "ignoredNpmScopes": ["@types"]
+  },
   /**
    * If you use Git as your version control system, this section has some additional
    * optional features you can use.
@@ -228,16 +228,16 @@
      * IMPORTANT: Because these are regular expressions encoded as JSON string literals,
      * RegExp escapes need two backslashes, and ordinary periods should be "\\.".
      */
-    // "allowedEmailRegExps": [
-    //   "[^@]+@users\\.noreply\\.github\\.com",
+    "allowedEmailRegExps": [
+      "[^@]+@users\\.noreply\\.github\\.com",
     //   "travis@example\\.org"
-    // ],
+    ],
     /**
      * When Rush reports that the address is malformed, the notice can include an example
      * of a recommended email.  Make sure it conforms to one of the allowedEmailRegExps
      * expressions.
      */
-    // "sampleEmail": "mrexample@users.noreply.github.com",
+    "sampleEmail": "mrexample@users.noreply.github.com",
     /**
      * The commit message to use when committing changes during 'rush publish'.
      *
@@ -245,7 +245,7 @@
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    // "versionBumpCommitMessage": "Bump versions [skip ci]",
+    "versionBumpCommitMessage": "Bump versions [skip ci]",
     /**
      * The commit message to use when committing changes during 'rush version'.
      *
@@ -253,7 +253,7 @@
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    // "changeLogUpdateCommitMessage": "Update changelogs [skip ci]"
+    "changeLogUpdateCommitMessage": "Update changelogs [skip ci]"
   },
   "repository": {
     /**
@@ -426,112 +426,121 @@
     {
       "packageName": "@rhom6us/async-timers",
       "projectFolder": "async-timers",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true,
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/audio-context",
       "projectFolder": "audio-context",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/case-converter",
       "projectFolder": "case-converter",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "prototype",
+      "versionPolicyName": "prototype",
+      // "shouldPublish": tru
     },
     {
       "packageName": "@rhom6us/defer",
       "projectFolder": "defer",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/fetch",
       "projectFolder": "fetch",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
-    // {
-    //   "packageName": "@rhom6us/fniterate",
-    //   "projectFolder": "fniterate",
-    //   "reviewCategory": "tools",
-    //   "versionPolicyName": "rhom6us",
-    //   "shouldPublish": false,
-    // },
+    {
+      "packageName": "@rhom6us/fniterate",
+      "projectFolder": "fniterate",
+      "reviewCategory": "prototype",
+      "versionPolicyName": "prototype"
+      // "shouldPublish": false
+    },
     {
       "packageName": "@rhom6us/func",
       "projectFolder": "func",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/kinda-weak-map",
       "projectFolder": "kinda-weak-map",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/logger",
       "projectFolder": "logger",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/obj",
       "projectFolder": "obj",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/set-immediate",
       "projectFolder": "set-immediate",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/singleton",
       "projectFolder": "singleton",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/type-guards",
       "projectFolder": "type-guards",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/type-helpers",
       "projectFolder": "type-helpers",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/typed-pluralizer",
       "projectFolder": "typed-pluralizer",
-      "reviewCategory": "tools",
-      "versionPolicyName": "rhom6us",
-      "shouldPublish": true
+      "reviewCategory": "prototype",
+      "versionPolicyName": "prototype"
+      // "shouldPublish": true
     },
     {
       "packageName": "@rhom6us/heft-web-rig",
       "projectFolder": "heft-web-rig",
-      "reviewCategory": "rigs"
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
+    },
+    {
+      "packageName": "@rhom6us/heft-webpack-rig",
+      "projectFolder": "heft-webpack-rig",
+      "reviewCategory": "production",
+      "versionPolicyName": "rhom6us"
+      // "shouldPublish": true
     }
   ]
 }
