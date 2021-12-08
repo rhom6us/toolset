@@ -9,10 +9,10 @@ const rigConfig = RigConfig.loadForProjectFolder({
 
 if (rigConfig.rigFound) {
 
-    // e.g. "/path/to/project3/node_modules/@fndj/heft-webpack-rig/profile/library"
+    // e.g. "/path/to/project3/node_modules/@rhom6us/heft-webpack-rig/profile/library"
     const profileDir = rigConfig.getResolvedProfileFolder();
 
-    // e.g. "/path/to/project3/node_modules/@fndj/heft-webpack-rig/profile/library/output"
+    // e.g. "/path/to/project3/node_modules/@rhom6us/heft-webpack-rig/profile/library/output"
 
     const outputSrc = path.join(profileDir, 'output');
     const outputItems = fs.readdirSync(outputSrc).map(dir => path.join(outputSrc, dir));
