@@ -11,7 +11,7 @@
   "sideEffects": false,
   "scripts": {
     "test": "heft test --clean",
-    "build": "heft build --clean",
+    "build": "",
     "build:watch": "heft build"
   },
   "keywords": [],
