@@ -1,6 +1,6 @@
 {
   "name": "@rhom6us/heft-webpack-rig",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A rig package for web browser projects that build using Heft",
   "license": "MIT",
   "scripts": {
