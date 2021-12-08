@@ -11,7 +11,8 @@
     "**/Thumbs.db": true,
     "**/node_modules": true,
     "**/*.log": true,
-    "**/.rush": true
+    "**/.rush": true,
+    "**/temp": true
   },
   "explorerExclude.backup": null,
   "[jsonc]": {
